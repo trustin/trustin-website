@@ -50,7 +50,6 @@ popd
 rm -fr "$SRC"
 pushd "$BIN/.."
 bundle exec awestruct --generate --force || exit 1
-cp -R 3.* 4.* "$SRC" || exit 1
 popd
 
 # Pull the latest changes in trustin.github.com
