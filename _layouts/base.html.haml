@@ -27,8 +27,17 @@
       body {
         padding-top: 60px;
       }
-    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.no-icons.min.css', :media=>'screen'  }
-    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css', :media=>'screen'  }
+
+    -# Bootstrap et al
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.no-icons.min.css', :media=>'screen' }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css', :media=>'screen' }
+    %script{ :type=>'text/javascript', :src=>'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js' }
+    %script{ :type=>'text/javascript', :src=>'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/js/bootstrap.min.js' }
+
+    -# Galleria
+    %script{ :type=>'text/javascript', :src=>'http://cdnjs.cloudflare.com/ajax/libs/galleria/1.2.9/galleria.min.js' }
+    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/lib/galleria/themes/folio/galleria.folio.min.js" }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/lib/galleria/themes/folio/galleria.folio.css" }
 
     -# SyntaxHighlighter
     %script{ :type=>'text/javascript', :src=>"#{site.base_url}/lib/sh/scripts/shCore.js" }
@@ -51,7 +60,5 @@
         %p 
           Copyright &copy; #{Date.today.year} 
           %a{ :href=>"#{site.base_url}/index.html"} Trustin Heuiseung Lee
-    %script{ :type=>'text/javascript', :src=>'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js' }
-    %script{ :type=>'text/javascript', :src=>'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/js/bootstrap.min.js' }
     %script{ :type=>'text/javascript', :src=>"#{site.base_url}/lib/common.footer.js" }
 
