@@ -1,0 +1,11 @@
+*.swp
+*.lock
+.awestruct
+.sass-cache
+.rvmrc
+.bundle
+_site
+_tmp
+_rewrite.log
+wiki/
+
