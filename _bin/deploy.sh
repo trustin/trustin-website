@@ -49,7 +49,6 @@ popd
 # Generate the web site
 rm -fr "$SRC"
 pushd "$BIN/.."
-"$BIN/update-wiki.sh" || exit 1 # Retreve all wiki pages
 bundle exec awestruct --generate --force || exit 1
 cp -R 3.* 4.* "$SRC" || exit 1
 popd
