@@ -9,6 +9,6 @@ gem 'therubyracer', '~> 0.11.4'
 gem 'coffee-rails', '~> 4.0.0.beta1'
 
 gem 'disqus', '~> 1.0.4'
-gem 'nokogiri', '~> 1.5.9'
+gem 'nokogiri', '~> 1.8.5'
 gem 'htmlentities', '~> 4.3.1'
 
